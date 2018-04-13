@@ -46,7 +46,8 @@
       <script>
       var button = window.document.getElementById('button')
 var listener = function (event) {
-  gtag('event', 'test', {
+  var screen = window.screen.availHeight + 'x' + window.screen.availWeight
+  gtag('event', screen, {
   'event_category': 'test'
 });
 }
