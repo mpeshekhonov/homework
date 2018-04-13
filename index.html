@@ -43,10 +43,16 @@
     </form>
     <div class="wrapper">
       <button id="button" type="button" name="button">Sample Button</button>
-      gtag('event', <action>, {
-  'event_category': <category>,
-  'event_label': <label>,
-  'value': <value>
+      <script>
+      var listener = function (event) {
+  var output = window.document.getElementById('button')
+  gtag('event', test, {
+  'event_category': testCategory,
+  'event_action': ('screen')
+});
+ }
+link.addEventListener('click', listener)
+      </script>
 });
     </div>
   </body>
