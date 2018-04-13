@@ -45,12 +45,12 @@
       <button id="button" type="button" name="button">Sample Button</button>
       <script>
       var button = window.document.getElementById('button')
-      function myFunction() {
-      button.click(); 
-      gtag('event', test, {
+var listener = function (event) {
+  gtag('event', test, {
   'event_category': test
 });
 }
+button.addEventListener('click', listener)
       </script>
     </div>
   </body>
