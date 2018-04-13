@@ -44,6 +44,7 @@
     <div class="wrapper">
       <button id="button" type="button" name="button">Sample Button</button>
       <script>
+      var button = window.document.getElementById('button')
       var listener = function (event) {
   var output = window.document.getElementById('button')
   gtag('event', test, {
@@ -51,7 +52,7 @@
   'event_action': ('screen')
 });
  }
-link.addEventListener('click', listener)
+button.addEventListener('click', listener)
       </script>
     </div>
   </body>
