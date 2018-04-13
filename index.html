@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-106131227-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-106131227-1');
+</script>
     <meta charset="utf-8">
     <title>Sample Page</title>
   </head>
@@ -34,6 +43,11 @@
     </form>
     <div class="wrapper">
       <button id="button" type="button" name="button">Sample Button</button>
+      gtag('event', <action>, {
+  'event_category': <category>,
+  'event_label': <label>,
+  'value': <value>
+});
     </div>
   </body>
 </html>
